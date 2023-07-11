@@ -1,1 +1,16 @@
-/* здесь используйте глобальные переменные */
+/*ШИРИНЫ ЭКРАНОВ*/
+$mobile-width: 320px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$tablet-width-only: 1439px;
+$desktop-width: 1440px;
+/* ШРИФТЫ */
+$font-family-montserrat-regular: "Montserrat Regular", "Arial", sans-serif;
+$font-family-montserrat-medium: "Montserrat Medium", "Arial", sans-serif;
+$font-family-montserrat-semi-bold: "Montserrat Semi Bold", "Arial", sans-serif;
+$font-family-montserrat-bold: "Montserrat Bold", "Arial", sans-serif;
+$font-size-base: 32px;
+$line-height-base: 24px;
+/*БАЗОВЫЕ ЦВЕТА*/
+$color-base-twilight-gray: #333333;
+$color-base-tomato: #ff6347;

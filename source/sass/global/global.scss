@@ -1,1 +1,78 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+  object-fit: contain;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.breaker {
+  display: block;
+
+  &--on-on {
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+
+  &--on-off {
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--off-on {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+
+  &--off-off {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
